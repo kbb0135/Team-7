@@ -13,7 +13,6 @@ function SignUp() {
     event.preventDefault();
     // handle sign up logic
   }
-
   return (
     <div className="signup">
       <h1>Sign Up</h1>
