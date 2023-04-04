@@ -1,0 +1,46 @@
+.login-container {
+    text-align: center;
+    /*background-image: url('./images/cafeteria-photo.jpg');*/
+    /*background-image: url('https://unsplash.com/photos/nmpW_WwwVSc');*/
+    /*background-size: cover; 
+    */
+}
+.login-box {
+    width: 300px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #ccc;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 10px;
+  }
+  
+  .login-box label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-box input[type='text'],
+  .login-box input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    max-width: 240px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-box input[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    max-width: 264px; 
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
