@@ -1,0 +1,131 @@
+body {
+  background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Add this property to make the image fit within the body element */
+    background-repeat: no-repeat; /* Optional: prevent image from repeating */
+    background-position: center center; /* Optional: center the image horizontally and vertically */
+
+}
+.signup {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #1d1111;
+  border-width: 2px;
+  border-radius: 5px;
+  margin-top: 40px;
+  background-color: #000305;
+  }
+
+  .login {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #1d1111;
+  border-width: 2px;
+  border-radius: 5px;
+  margin-top: 40px;
+  background-color: #000305;
+  color:white;
+  margin-left: 20px;
+  }
+  .unt-login {
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #339714;
+  }
+  .sign {
+    color: #fff;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #A9A9A9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .direct {
+    text-align:center;
+    text-decoration: none;
+  }
+  .direct:hover {
+    cursor: pointer;
+    color: rgb(160, 23, 23);
+    text-decoration: none;
+    
+  }
+  
+  /* Navbar Home Menu Part */
+  .navbar {
+    background-color: #333; 
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links {
+    list-style: none; 
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 1rem; 
+  }
+
+  .nav-item a {
+    color: #fff; 
+    text-decoration: none; 
+    padding: 0.8rem;
+  }
+  
+  .nav-item a:hover {
+    color: #ccc; 
+  }
+
+  .headNavbar {
+    background-color: #10a023; 
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footNavbar {
+    background-color: #333; 
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  .unt-logo {
+    font-size: 1.2em;
+  }
+  .unt-title {
+    font-size: 1.2em;
+  }
+  .unt-logo-f {
+    color: #ffff;
+  }
+
