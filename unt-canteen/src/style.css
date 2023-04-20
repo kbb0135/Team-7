@@ -1,10 +1,25 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --untBackground: #008c39;
+  --untParakeetGreen: #59a909;
+  --untOliveGreen: #56c031;
+  --untBlack: #1f2200;
+}
 body {
   background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
     font-family: Arial, sans-serif;
     background-size: cover; /* Add this property to make the image fit within the body element */
     background-repeat: no-repeat; /* Optional: prevent image from repeating */
     background-position: center center; /* Optional: center the image horizontally and vertically */
 
+}
+
+.App {
+  position: absolute;
+  top: 0;
 }
 .signup {
   max-width: 400px;
@@ -107,20 +122,55 @@ body {
     color: #ccc; 
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   .headNavbar {
-    background-color: #10a023; 
+    background-color: var(--untBackground); 
+    width: 100%;
+    position: absolute;
+    top:0;
     height: 60px;
     justify-content: center;
     align-items: center;
   }
+
+
   .footNavbar {
-    background-color: #333; 
-    height: 60px;
+    background-color: var(--untBlack); 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     justify-content: center;
     align-items: center;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .unt-logo {
     font-size: 1.2em;
+    margin: 0;
   }
   .unt-title {
     font-size: 1.2em;

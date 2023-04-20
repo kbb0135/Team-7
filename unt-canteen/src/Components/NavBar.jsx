@@ -1,8 +1,8 @@
 
 import React from 'react';
-import './style.css'; // Import CSS file for Navbar component
+import '../style.css'; // Import CSS file for Navbar component
 
-const MenuNavbar = () => {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="nav-links">
@@ -17,4 +17,4 @@ const MenuNavbar = () => {
   );
 };
 
-export default MenuNavbar;
+export default Navbar;
