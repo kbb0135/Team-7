@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Header.jsx";
-import Footer from "../Footer.jsx";
-import SignUp from "../SignUp.jsx";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer.jsx";
+import SignUp from "../Models/SignUp.jsx";
 
 const SignUpPage = () => {
     return(
