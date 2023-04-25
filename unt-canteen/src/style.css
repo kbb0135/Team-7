@@ -155,8 +155,9 @@ body {
   }
 
 
-  .footNavbar {
+  .footerDiv {
     background-color: var(--untBlack); 
+    display: flex;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -164,6 +165,48 @@ body {
     align-items: center;
   }
 
+  .footerTitle 
+  {
+    color: var(--untOliveGreen);
+    margin: 0;
+  }
+
+  .footerPara
+  {
+    color: var(--white);
+    font-size: small;
+    margin: 0;
+  }
+
+  .footerUNTCol
+  {
+    flex: auto;
+  }
+
+  .footerUNTColEnd
+  {
+    align-content: end;
+  }
+
+  .footerUNTColSection
+  {
+    margin: 2rem;
+  }
+
+  .footerUNTColTitle
+  {
+    color: var(--white);
+  }
+
+  .footerUNTColAddress
+  {
+    color: var(--white);
+  }
+
+  .footerUNTColLocation
+  {
+    color: var(--untOliveGreen)
+  }
 
 
 
