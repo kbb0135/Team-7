@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../style.css';
+import { Link } from 'react-router-dom';
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -17,8 +18,8 @@ function Login() {
         <input type="email" id="email" className="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         <label htmlFor="password">Password:</label>
         <input type="password" id="password" className="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        <input type="submit" value="LogIn" />
-        <h4 className="direct">Back to SignUp</h4>
+        <input type="submit" value="LogIn" /> 
+        <Link to="/signup" className="direct"><h4 className="direct">Back to SignUp</h4></Link>
       </form>
     </div>
   );
