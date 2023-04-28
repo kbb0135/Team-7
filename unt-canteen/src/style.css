@@ -17,6 +17,11 @@ body {
 
 }
 
+img
+{
+  vertical-align: center;
+}
+
 .App {
   position: absolute;
   top: 0;
@@ -93,19 +98,31 @@ body {
     text-decoration: none;
     
   }
+
+  .EagleImg {
+    width: 5rem;
+  }
+
+  .untbar-eagle
+  {
+    position: absolute;
+    left: 7px;
+    top: 5%;
+    height: 7rem;
+  }
   
   /* Navbar Home Menu Part */
   .navbar {
     background-color: var(--black); 
-    height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
   }
 
   .nav-links {
     list-style: none; 
     display: flex;
+    padding-left: 100px;
   }
   
   .nav-item {
@@ -120,12 +137,32 @@ body {
   }
   
   .nav-item a:hover {
-    color: #ccc; 
+    background-color: var(--white);
+    color: var(--black); 
   }
 
   .untbar {
+    display: flex;
     background-color: var(--untBackground);
     color: var(--white);
+  }
+
+  .untHeaderTitle {
+    flex-grow: 1;
+  }
+
+  .untHeaderCol1 {
+    flex: 0.5;
+  }
+
+  .untHeaderCol2 {
+    flex: 2;
+  }
+
+  .untHeaderCol3 {
+    flex: 1;
+    align-items: end;
+    align-content: end;
   }
 
   .untbarText {
@@ -140,8 +177,9 @@ body {
 
 
 
-
-
+.MenuBody {
+  height: 1300px;
+}
 
 
   .headNavbar {
@@ -154,7 +192,6 @@ body {
     align-items: center;
   }
 
-
   .footerDiv {
     background-color: var(--untBlack); 
     display: flex;
@@ -164,7 +201,12 @@ body {
     justify-content: center;
     align-items: center;
   }
-
+@media only screen and (max-width: 600px) {
+.footerDiv{
+  flex-direction: column;
+}
+  
+}
   .footerTitle 
   {
     color: var(--untOliveGreen);
@@ -176,6 +218,7 @@ body {
     color: var(--white);
     font-size: small;
     margin: 0;
+    
   }
 
   .footerUNTCol
@@ -207,18 +250,6 @@ body {
   {
     color: var(--untOliveGreen)
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
   .unt-logo {
     font-size: 1.2em;

@@ -1,11 +1,37 @@
 import React from 'react';
+import Eagle from '../Assets/Logo.png';
+import SignUp from '../Pages/SignUpPage';
 import '../style.css';
 
 const UNTBar = () => {
     return (
         <div class="untbar">
-            <h3 class="untbarText">UNIVERSITY OF NORTH TEXAS</h3>
-            <h2 class="untbarText">UNT CAFTERIA</h2>
+            <div className="untHeaderCol1">
+                <div className="untImg">
+                     <img src={Eagle} alt="UNT_Eagle" className="untbar-eagle"/>
+                </div>
+               
+            </div>
+           
+           
+            <div className='untHeaderCol2'>
+                <div className='untHeaderTitle'>
+                    <h3 class="untbarText">UNIVERSITY OF NORTH TEXAS</h3>
+                    <h2 class="untbarText">UNT CAFTERIA</h2>
+                </div>
+                
+            </div>
+           
+           
+            <div className='untHeaderCol3'>
+                <div className='untHeaderLogin'>
+                    <button>Login</button>
+                    <a href={SignUp}><p>No Account? Sign UP HERE</p></a>
+                </div>
+               
+
+            </div>
+            
         </div>
     );
 }
