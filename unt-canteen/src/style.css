@@ -173,6 +173,12 @@ img
   .Header_btn {
       color: var(--white);
       background-color: var(--black);
+      transition: transform 0.2s ease-in-out;;
+    }
+
+    .Header_btn:hover {
+      transform: scale(1.05);
+      cursor: pointer;
     }
 
   .untbarText {
@@ -195,23 +201,21 @@ img
 .MenuBody {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 10px;
 }
 
-@media only screen and (max-width: 900px) {
-  .MenuBody{
-    flex-direction: column;
-    justify-content: center;
-  }
-}
+
 
 .card {
   width: 270px;
+  margin: 20px;
   transition: transform 0.2s ease-in-out;
 }
 
 .card:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .card__image {
