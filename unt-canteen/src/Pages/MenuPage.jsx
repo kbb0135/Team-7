@@ -5,7 +5,7 @@ import Menu from "../Models/Menu.jsx";
 
 const MenuPage = () => {
     return (
-        <div>
+        <div className="MenuPage">
             <Header/>
             <Menu/>
             <Footer/>

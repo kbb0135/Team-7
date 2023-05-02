@@ -25,7 +25,7 @@ const UNTBar = () => {
            
             <div className='untHeaderCol3'>
                 <div className='untHeaderLogin'>
-                    <button>Login</button>
+                    <button className='Header_btn'>Login</button>
                     <a href={SignUp}><p>No Account? Sign UP HERE</p></a>
                 </div>
                

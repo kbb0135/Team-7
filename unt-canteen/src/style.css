@@ -1,6 +1,7 @@
 :root {
   --black: #000000;
   --white: #ffffff;
+  --gray: #dddddd;
   --untBackground: #008c39;
   --untParakeetGreen: #59a909;
   --untOliveGreen: #56c031;
@@ -10,6 +11,7 @@ body {
   background-color: #f0f8ff;
   margin: 0;
   padding: 0;
+  height: 100%;
     font-family: Arial, sans-serif;
     background-size: cover; /* Add this property to make the image fit within the body element */
     background-repeat: no-repeat; /* Optional: prevent image from repeating */
@@ -145,6 +147,7 @@ img
     display: flex;
     background-color: var(--untBackground);
     color: var(--white);
+    padding-top: 2vh;
   }
 
   .untHeaderTitle {
@@ -161,24 +164,92 @@ img
 
   .untHeaderCol3 {
     flex: 1;
-    align-items: end;
-    align-content: end;
+    align-items: center;
+    align-content: center;
+
+    
   }
+
+  .Header_btn {
+      color: var(--white);
+      background-color: var(--black);
+    }
 
   .untbarText {
     margin: 0;
   }
 
+  .untHeaderLogin {
+    align-content: center;
+  }
 
 
 
 
-
-
-
+.MenuPage {
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
 
 .MenuBody {
-  height: 1300px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .MenuBody{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.card {
+  width: 270px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card__image {
+  margin-bottom: 0;
+
+}
+
+.card_NameAndPrice
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__title {
+  margin: 4px;
+}
+
+.card_price {
+  margin: 4px;
+}
+
+.card_rating {
+  margin: 0;
+}
+
+.card__location {
+  background-color: var(--untBackground);
+  color: var(--white);
+  border-radius: 3px;
+  height: 20px;
+  width: 115px;
+  margin-top: 10;
+  font-size: x-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
@@ -192,12 +263,12 @@ img
     align-items: center;
   }
 
+
   .footerDiv {
     background-color: var(--untBlack); 
+    margin-top: auto;
     display: flex;
     width: 100%;
-    position: absolute;
-    bottom: 0;
     justify-content: center;
     align-items: center;
   }
