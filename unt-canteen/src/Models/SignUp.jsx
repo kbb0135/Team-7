@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../style.css';
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth, storage, db } from "../firebase"
+import { auth, db } from "../firebase"
 import { doc, setDoc } from "firebase/firestore";
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -42,8 +42,8 @@ function SignUp() {
     // ...
   })
   .catch((error) => {
-    const errorCode = error.code;
     const errorMessage = error.message;
+    alert(errorMessage)
     // ..
   });   
       
