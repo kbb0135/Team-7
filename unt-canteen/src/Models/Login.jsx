@@ -19,7 +19,7 @@ function Login() {
         <label htmlFor="password">Password:</label>
         <input type="password" id="password" className="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         <input type="submit" value="LogIn" /> 
-        <Link to="/home" className="direct"><h4 className="direct">Back to SignUp</h4></Link>
+        <Link to="/signup" className="direct"><h4 className="direct">Back to SignUp</h4></Link>
       </form>
     </div>
   );
