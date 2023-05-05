@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import SignUpPage from './Pages/SignUpPage.jsx';
-import LoginPage from './Pages/LoginPage.jsx';
-//import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MenuPage from './Pages/MenuPage.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MenuPage/>
-    
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

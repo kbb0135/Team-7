@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import '../style.css';
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth, storage, db } from "../firebase"
+import { doc, setDoc } from "firebase/firestore";
+import { Link, useNavigate } from 'react-router-dom';
+
+
 
 function SignUp() {
   const [firstName, setFirstName] = useState('');
@@ -9,9 +15,45 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSubmit = (event) => {
+  
+  const navigate = useNavigate();
+  const handleSubmit = async(event) => {
     event.preventDefault();
-    // handle sign up logic
+    const firstName = event.target[0].value;
+    const lastName = event.target[1].value;
+    const email = event.target[2].value;
+    const password = event.target[3].value;
+    console.log(firstName + lastName + email)
+    try {
+      createUserWithEmailAndPassword(auth, email, password)
+      
+  .then(async (userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log("I am here")
+    console.log(user.uid)
+    await setDoc(doc(db, "Users", user.uid), {
+      FirstName:firstName,
+      LastName:lastName,
+      email:email
+    })
+    console.log("I am here too")
+    
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });   
+      
+      
+      console.log("here")
+    navigate("/")
+    }
+    
+    catch {}
+  
   }
   return (
     <div className="signup">
@@ -30,6 +72,7 @@ function SignUp() {
         <label htmlFor="confirmPassword" className="sign">Confirm Password:</label>
         <input type="password" id="confirmPassword" className="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
          <input type="submit" value="Sign Up"/>
+         <Link to="/signup" className="direct"><h4 className="direct">Back to Login</h4></Link>
       </form>
     </div>
   );
