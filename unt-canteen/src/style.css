@@ -131,15 +131,19 @@ img
   .nav-item {
     margin-right: 1rem; 
     color: var(--white);
+
+  }
+  .nav-head {
+    text-decoration: none;
   }
 
-  .nav-item a {
+  .nav-item  {
     color: #fff; 
     text-decoration: none; 
     padding: 0.8rem;
   }
   
-  .nav-item a:hover {
+  .nav-item :hover {
     background-color: var(--white);
     color: var(--black); 
   }
