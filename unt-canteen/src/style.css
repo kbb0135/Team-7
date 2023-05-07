@@ -125,25 +125,26 @@ img
   .nav-links {
     list-style: none; 
     display: flex;
+    margin: 0;
     padding-left: 100px;
   }
-  
-  .nav-item {
-    margin-right: 1rem; 
+
+  .nav-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 1rem;
     color: var(--white);
+    line-height: 1.8rem;
+    height: 1.8rem;
+    padding: 10px;
   }
 
-  .nav-item a {
-    color: #fff; 
-    text-decoration: none; 
-    padding: 0.8rem;
-  }
-  
-  .nav-item a:hover {
+ .nav-link:hover {
+    margin: 0;
     background-color: var(--white);
     color: var(--black); 
+    margin-right: 1rem;
   }
-
   .untbar {
     display: flex;
     background-color: var(--untBackground);
