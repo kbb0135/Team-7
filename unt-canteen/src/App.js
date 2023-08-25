@@ -6,9 +6,9 @@ import LoginPage from './Pages/LoginPage.jsx';
 import HomePage from './Pages/HomePage.jsx';
 import MenuPage from './Pages/MenuPage.jsx';
 
-
 const App = () => {
   return (
+    
       <Routes>
               <Route default path="/" element={<LoginPage />} />
               <Route path='/signup' element={<SignUp/>} />
