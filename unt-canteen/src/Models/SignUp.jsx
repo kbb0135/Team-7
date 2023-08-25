@@ -14,7 +14,7 @@ function SignUp() {
   const [confirmEmail, setConfirmEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-
+  console.log(firstName+lastName)
   
   const navigate = useNavigate();
   const handleSubmit = async(event) => {

@@ -118,7 +118,7 @@ img
   .navbar {
     background-color: var(--black); 
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -135,18 +135,25 @@ img
   }
   .nav-head {
     text-decoration: none;
+    cursor: pointer;
   }
 
+  .nav-head:hover {
+    /* background-color: var(--white); */
+    color:#008c39 !important;
+  }
+
+  
   .nav-item  {
     color: #fff; 
     text-decoration: none; 
     padding: 0.8rem;
   }
   
-  .nav-item :hover {
+  /* .nav-item :hover {
     background-color: var(--white);
     color: var(--black); 
-  }
+  } */
 
   .untbar {
     display: flex;
@@ -178,7 +185,7 @@ img
   .Header_btn {
       color: var(--white);
       background-color: var(--black);
-      transition: transform 0.2s ease-in-out;;
+      transition: transform 0.2s ease-in-out;
     }
 
     .Header_btn:hover {
@@ -197,17 +204,17 @@ img
 
 
 
-.MenuPage {
+.MenuPage, .SignUpPage, .LoginPage {
   min-height: 100vh;
   display:flex;
   flex-direction: column;
 }
 
-.MenuBody {
+.MenuBody, .signup, .login {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 18px;
 }
 
 
