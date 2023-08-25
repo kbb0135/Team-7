@@ -9,6 +9,7 @@ import AdminAddMenu from './Models/AdminAddMenu.jsx';
 
 const App = () => {
   return (
+    
       <Routes>
               <Route default path="/" element={<LoginPage />} />
               <Route path='/signup' element={<SignUp/>} />
