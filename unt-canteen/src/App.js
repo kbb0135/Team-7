@@ -10,6 +10,7 @@ const App = () => {
   return (
     
       <Routes>
+        
               <Route default path="/" element={<LoginPage />} />
               <Route path='/signup' element={<SignUp/>} />
               <Route path = '/home' element={<HomePage />} />
