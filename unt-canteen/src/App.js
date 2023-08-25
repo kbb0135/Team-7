@@ -7,7 +7,6 @@ import HomePage from './Pages/HomePage.jsx';
 import MenuPage from './Pages/MenuPage.jsx';
 import AdminAddMenu from './Models/AdminAddMenu.jsx';
 
-
 const App = () => {
   return (
       <Routes>
