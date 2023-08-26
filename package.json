@@ -1,13 +1,7 @@
 {
   "dependencies": {
-<<<<<<< HEAD
-    "bootstrap": "^5.2.3",
-    "firebase": "^9.19.1",
-    "react-bootstrap": "^2.7.2"
-=======
     "firebase": "^9.20.0",
     "material-ui": "^0.20.2",
     "react-router-dom": "^6.10.0"
->>>>>>> ccf4ef540d142acab786b4657d1af828d3bbf945
   }
 }
