@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../style.css';
-import { auth, db } from "../firebase";
 import { Link, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 ;
@@ -22,7 +21,7 @@ function Login() {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        console.log("user")
+        console.log(user)
         navigate("/home")        
         // ...
       })
