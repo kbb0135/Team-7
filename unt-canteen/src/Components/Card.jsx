@@ -10,7 +10,7 @@ const Card = ({ title, price, location, imageSrc, rating }) => {
         <h3 className="card__title">{title}</h3>
       <h3 className="card_price">{price}</h3>
       </div>
-      <h5 className='card_rating'>{rating} <img src={Star}></img></h5>
+      <h5 className='card_rating'>{rating} <img src={Star} alt=""></img></h5>
       <p className="card__location">{location}</p>
     </div>
   );

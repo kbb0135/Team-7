@@ -22,7 +22,7 @@ function SignUp() {
     const firstName = event.target[0].value;
     const lastName = event.target[1].value;
     const email = event.target[2].value;
-    const password = event.target[3].value;
+    const password = event.target[4].value;
     console.log(firstName + lastName + email)
     try {
       createUserWithEmailAndPassword(auth, email, password)
@@ -72,7 +72,7 @@ function SignUp() {
         <label htmlFor="confirmPassword" className="sign">Confirm Password:</label>
         <input type="password" id="confirmPassword" className="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
          <input type="submit" value="Sign Up"/>
-         <Link to="/signup" className="direct"><h4 className="direct">Back to Login</h4></Link>
+         <Link to="/" className="direct"><h4 className="direct">Back to Login</h4></Link>
       </form>
     </div>
   );
