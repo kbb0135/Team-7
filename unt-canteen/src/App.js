@@ -1,12 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Route, Routes} from 'react-router-dom';
 
-function App() {
+import SignUp from './Models/SignUp.jsx';
+import LoginPage from './Pages/LoginPage.jsx';
+import HomePage from './Pages/HomePage.jsx';
+import MenuPage from './Pages/MenuPage.jsx';
+import AdminAddMenu from './Models/AdminAddMenu.jsx';
+
+const App = () => {
   return (
+<<<<<<< HEAD
     <div className="App">
       
     </div>
   );
+=======
+    
+      <Routes>
+        
+              <Route default path="/" element={<LoginPage />} />
+              <Route path='/signup' element={<SignUp/>} />
+              <Route path = '/home' element={<HomePage />} />
+              <Route path = "/menu" element={<MenuPage />} />
+              <Route path = "/adminmenu" element={<AdminAddMenu />} />
+      </Routes>
+  )
+>>>>>>> origin/Karan
 }
-
 export default App;
