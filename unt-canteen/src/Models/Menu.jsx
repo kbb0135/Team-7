@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Card from '../Components/Card';
 import Coke from '../Assets/Coke.png';
 import '../style.css';
