@@ -9,12 +9,6 @@ import AdminAddMenu from './Models/AdminAddMenu.jsx';
 
 const App = () => {
   return (
-<<<<<<< HEAD
-    <div className="App">
-      
-    </div>
-  );
-=======
     
       <Routes>
         
@@ -25,6 +19,5 @@ const App = () => {
               <Route path = "/adminmenu" element={<AdminAddMenu />} />
       </Routes>
   )
->>>>>>> origin/Karan
 }
 export default App;
