@@ -67,8 +67,7 @@ export default function AdminAddMenu() {
                             Name: itemName,
                             Price: price,
                             ImageURL: downloadURL               
-                        });
-                        
+                        });            
                     });
                     
                     
