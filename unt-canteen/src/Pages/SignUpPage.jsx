@@ -1,16 +1,19 @@
 import React from "react";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer.jsx";
 import SignUp from "../Models/SignUp.jsx";
+import { Link } from "react-router-dom";
 
 const SignUpPage = () => {
-    return(
-    <div>
-        <Header/>
+  return (
+    <div className="fullscreen pad-30">
+      <div className="flex-col ali-center">
+        <div className="flex-row jc-start full-width">
+          <Link to="/home" className="direct da-secondary-button">
+            Back to Home
+          </Link>
+        </div>
         <SignUp />
-        <Footer/>
-        
+          </div>
     </div>
-    )
-}
+  );
+};
 export default SignUpPage;
