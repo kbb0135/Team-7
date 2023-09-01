@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 
-import SignUp from './Models/SignUp.jsx';
+import SignUpPage from './Pages/SignUpPage.jsx';
 import LoginPage from './Pages/LoginPage.jsx';
 import HomePage from './Pages/HomePage.jsx';
 import MenuPage from './Pages/MenuPage.jsx';
@@ -11,10 +11,9 @@ const App = () => {
   return (
     
       <Routes>
-        
-              <Route default path="/" element={<LoginPage />} />
-              <Route path='/signup' element={<SignUp/>} />
-              <Route path = '/home' element={<HomePage />} />
+              <Route default path="/" element={<HomePage />} />
+              <Route path='/signup' element={<SignUpPage/>} />
+              <Route path = '/login' element={<LoginPage />} />
               <Route path = "/menu" element={<MenuPage />} />
               <Route path = "/adminmenu" element={<AdminAddMenu />} />
       </Routes>

@@ -12,7 +12,7 @@ const SignUpPage = () => {
           </Link>
         </div>
         <SignUp />
-          </div>
+        </div>
     </div>
   );
 };
