@@ -13,7 +13,7 @@ node_modules/*
 # production
 /build
 /unt-canteen/node_modules/
-
+.eslintcache
 # misc
 .DS_Store
 .env.local
