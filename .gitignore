@@ -12,7 +12,7 @@
 node_modules/*
 # production
 /build
-unt-canteen/node_modules/*
+unt-canteen/node_modules/
 
 # misc
 .DS_Store
